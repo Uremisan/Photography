@@ -1,0 +1,232 @@
+/* 
+ *Capture Styling
+ *author: Manfred "Marley" Edun
+*/ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  width: fit-content;
+}
+/** About Page**/
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/lilly-rum-eE4YBIxSP60-unsplash.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rbga(0,0,0,0.6);
+  z-index: -1;
+}
+.banner ul {
+  list-style: none;
+  color: white;
+}
+/** CSS style for CAPTURE logo**/
+.logo {
+  float: left;
+  width: 45%;
+  text-transform: uppercase;
+}
+.logo h2{
+  padding-left: 60px;
+  color: white;
+}
+/** controls positoning of navigation list*/
+.menu-area {
+  width: 55%;
+  display: block;
+  overflow: hidden;
+  padding-top: 2rem;
+  
+}
+/** Controls the navigation text*/
+.menu-area ul li a{
+  color: white;
+}
+.menu-area ul li a:hover {
+  color: rgb(103, 131, 131);
+  transition: .5s;
+  cursor: pointer;
+  
+}
+.banner ul li{
+  float: left;
+  font-size: 16px;
+  display: block;
+  padding: 5px 18px;
+}
+.banner-text {
+  width: 600px;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+.banner-text h1 {
+  font-size: 45px;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-right: 5px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 5px;
+  animation: ani1 3.5s steps(40, end),
+      ani2  .75s step-end infinite;
+}
+.banner-text p{
+  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+.banner-text a {
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 18px;
+}
+.banner-text a:hover{
+  background: white;
+  color: black;
+  transition: 1s;
+}
+
+/**controls the animations**/
+@keyframes ani1{
+  from{
+    width: 0;
+  }
+  to{
+    width: 130%;
+  }
+}
+@keyframes ani2{
+  from,to { border-color: transparent }
+  50%{border-color: white;}
+}
+
+/**Main About***/
+.about {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+.about img {
+  width: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about h3{
+  font-family: SchnyderM-Demi-Web;
+}
+
+
+.about .modal-title {
+  width: 100%;
+}
+@media (max-width : 890px) {
+	.about .col-sm-4 {
+		max-width: 100%;
+		padding: 0;
+		margin: .25em;
+	}
+}
+.about p{
+  font-size: 2rem;
+}
+.about li{
+  font-size: 1.8rem;
+}
+
+/**GALLERY**/
+.gallery img {
+	width: 100%;
+}
+.gallery div[class*="col"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/**FORM**/
+.footer .text h3{
+  font-family: SchnyderM-Demi-Web;
+  font-size: 4.5rem;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.14em;
+  text-transform: none;
+  font-weight: normal;
+  padding-top: 2rem;
+}
+.footer .text h5{
+  font-family: Roboto Regular;
+  font-size: 1.625rem;
+  letter-spacing: 0.15em;
+  word-spacing: 0em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+input[type=text] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+ 
+}
+form #details {
+  font-family: SchnyderM-Demi-Web;
+}
+
+form #fname{
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
+form #lname {
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
+form #date {
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
+form #dlocation {
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
+form .button {
+  border: 1px solid black;
+  padding: 15px 50px;
+  color: black;
+  background-color: white;
+  font-family: Poppins Medium;
+  
+}
+form #checkbox {
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
+form #message {
+  font-family: SchnyderM-Demi-Web;
+  font-size: 1.6rem;
+}
